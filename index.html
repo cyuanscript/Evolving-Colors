@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Evolving Colors</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Press+Start+2P" />
+    <script type="text/javascript" src="./assetmanager.js"></script>
+    <script type="text/javascript" src="./timer.js"></script>
+    <script type="text/javascript" src="./automata.js"></script>
+    <script type="text/javascript" src="./gameengine.js"></script>
+    <script type="text/javascript" src="./util.js"></script>
+    <script type="text/javascript" src="./main.js"></script>
+</head>
+<body>
+    <canvas id="gameWorld" width="1000" height="1000" style="background: #2e2e2e; border: 1px solid black" tabindex="0" autofocus></canvas>
+    <div>
+        <br>
+        <label for="plantgrowth">Plant Growth:</label>
+        <fieldset style="width: 600px">
+            <input type="range" id="plantgrowth" min="1" max="80" value="20" class="slider">
+        </fieldset>
+        <br>
+        <label for="animatgrowth">Animat Growth:</label>
+        <fieldset style="width: 600px">
+            <input type="range" id="animatgrowth" min="1" max="80" value="4" class="slider">
+        </fieldset>
+        <br>
+        <label for="animatselection">Animat Food Selectivity:</label>
+        <fieldset style="width: 600px">
+            <input type="range" id="animatselection" min="-1" max="1" value="0" step="0.05" class="slider">
+        </fieldset>
+        <br>
+        Controls:
+        <fieldset style="width: 600px">
+            <button type="button" id="plant" class="button">Add Plant</button>
+            <button type="button" id="animat" class="button">Add Animat</button>
+            <button type="button" id="clear" class="button">Clear</button>
+        </fieldset>
+    </div>
+</body>
+</html>
